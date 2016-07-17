@@ -1,6 +1,76 @@
 #requestspinner {
   position: absolute;
-  left: 25px;
-  bottom: 25px;
+  left: 50%;
+  top: 100px;
   z-index: 10000;
+}
+.rs {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-family: FontAwesome !important;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.rs-5x {
+    font-size: 5em
+}
+.rs-spin {
+    -webkit-animation: rs-spin 2s infinite linear;
+    animation: rs-spin 2s infinite linear
+}
+.rs-pulse {
+    -webkit-animation: rs-spin 1s infinite steps(8);
+    animation: rs-spin 1s infinite steps(8)
+}
+@-webkit-keyframes rs-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+@keyframes rs-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+.rs-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle
+}
+.rs-stack-1x, .rs-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center
+}
+.rs-stack-1x {
+    line-height: inherit
+}
+.rs-stack-2x {
+    font-size: 2em
+}
+.rs-inverse {
+    color: #fff;
+    mix-blend-mode: difference;
+}
+.rs-square:before {
+    content: "\f0c8"
+}
+.rs-spinner:before {
+    content: "\f110"
 }
