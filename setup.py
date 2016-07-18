@@ -14,20 +14,20 @@ plugin_package = "octoprint_requestspinner"
 plugin_name = "OctoPrint-RequestSpinner"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-plugin_version = "0.1.1"
+plugin_version = "0.2"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
-plugin_description = """Shows a little spinner in the web frontend when background requests are active"""
+plugin_description = """Shows a spinner in the web frontend when background requests are active"""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
-plugin_author = "Gina Häußge"
+plugin_author = "James Churchill"
 
 # The plugin's author's mail address.
-plugin_author_email = "osd@foosel.net"
+plugin_author_email = "pelrun@gmail.com"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/OctoPrint/OctoPrint-RequestSpinner"
+plugin_url = "https://github.com/pelrun/OctoPrint-RequestSpinner"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "AGPLv3"
